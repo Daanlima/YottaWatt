@@ -1,0 +1,61 @@
+:root {
+    --primary: #007bff;
+    --lightPrimary: #4da3ff;
+    --primaryAction: #0d4989;
+    --secondary: #fafafa;
+    --thirdwhite: #ddd;
+    --light: #fff;
+    --darkBlue: #041c3c;
+    --dark: #182333;
+    --dark2: #0e141d;
+    --red: #fa0d1c;
+    --darkgrey: #242424;
+    --grey: #777;
+}
+
+.servicosmenu{
+    background:var(--dark);
+    border:none;
+}
+
+.nav-tabs .nav-link {
+    margin-bottom: -1px;
+    background: none;
+    border:0;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.servicostab{
+    padding:1em;
+    font-size:14px;
+    color:var(--lightPrimary);
+    font-weight: 900;
+    outline: none;
+    border:none;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color:var(--lightPrimary);
+    border:none;
+    outline: none;
+}
+
+.title-page {
+    background-image: url(../img/bg-banner-servicos.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.title-page-consult {
+    background-image: url(../img/bg-banner-consultoria.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+.pagetitle {
+    color: var(--light);
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-bottom: 0;
+}

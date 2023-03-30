@@ -1,0 +1,107 @@
+:root {
+  --primary: #007bff;
+  --lightPrimary: #4da3ff;
+  --primaryAction: #0d4989;
+  --secondary: #fafafa;
+  --thirdwhite: #ddd;
+  --light: #fff;
+  --darkBlue: #041c3c;
+  --dark: #182333;
+  --dark2: #0e141d;
+  --red: #fa0d1c;
+  --darkgrey: #242424;
+}
+
+.title-page {
+  background-image: url(../img/bg-banner-quem.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pagetitle {
+  color: var(--light);
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin-bottom: 0;
+}
+
+.infoicon {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  color: var(--primaryAction);
+}
+
+#experiencia {
+  background-color: var(--light);
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+#experiencia .somosumaempresa {
+  font-weight: 900;
+  font-family: "Poppins", sans-serif;
+  color: var(--dark2);
+}
+
+@media (max-width: 991px) {
+    .teia{
+        display:none;
+    }
+    .somosumaempresa{
+        text-align: center;
+    }
+}
+
+@media (max-width: 1180px) {
+  .img-teia {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 660px) {
+  .img-teia {
+    max-width: 300px;
+  }
+}
+
+#nossotime {
+  background: #fff;
+  padding-top: 3em;
+}
+
+.titulosobreitem {
+  padding-bottom: 0.3em;
+  border-bottom: 4px solid var(--primaryAction);
+  color: var(--dark);
+}
+
+.sobreitem p {
+  color: var(--darkgrey);
+  font-size: 18px;
+}
+
+.imgnossahist {
+  border-radius: 20px;
+  /*border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;*/
+}
+
+#valores {
+  background: url(../img/img-valores.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 2em;
+}
+
+.valoresitem h2,
+p {
+  color: var(--light);
+}
+
+.valoreslogo {
+  max-width: 200px;
+}
+
+@media (max-width:1455px){
+    
+}
