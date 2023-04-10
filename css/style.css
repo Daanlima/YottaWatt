@@ -18,6 +18,7 @@ body {
     --red: #fa0d1c;
     --black:#232323;
     --orange: #db8f03;
+    --lightgray:#7f7f7f;
 }
 
 ::selection {
@@ -705,6 +706,13 @@ header {
     margin: auto;
     max-width: 100px;
     border: 2px solid var(--primary);
+    opacity: 1;
+}
+
+.divider-gray{
+    margin: auto;
+    max-width: 300px;
+    border: 2px solid var(--lightgray);
     opacity: 1;
 }
 
