@@ -268,34 +268,6 @@ a:hover {
     background:var(--primaryAction);
 }
 
-@media (max-width: 768px) {
-    #header-carousel .carousel-item {
-        position: relative;
-        min-height: 450px;
-    }
-    #header-carousel .carousel-item img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-        width: 3rem;
-        height: 3rem;
-        border-width: 12px;
-    }
-    .footerfim {
-        display: none;
-    }
-    .footerfim-sm {
-        display: block
-    }
-
-    .imgmainphrase{
-        margin-top:20px;
-    }
-}
 
 .page-header {
     background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/carousel-1.jpg) center center no-repeat;
