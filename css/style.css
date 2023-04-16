@@ -245,6 +245,13 @@ a:hover {
     color: var(--secondary);
 }
 
+.breadcrumb-item+.breadcrumb-item::before {
+    content: "\f111";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: var(--secondary);
+}
+
 .footerfim-sm {
     display: none;
 }
@@ -632,18 +639,19 @@ header {
 }
 
 .pi-icon{
-    float:left;
-    padding-left:1.5em;
-    padding-right:1.5em;
+    font-size:2.2em;
+    vertical-align: middle;
+    padding-right: 10px;
 }
 
-.pi-icon i{
-    font-size:5em;
+.titlepi{
+    font-weight: 900;
 }
+
 
 .pi-text-low {
-    font-size:1.1em;
-    font-weight: 700;
+    font-size:1em;
+    font-weight: 600;
 }
 
 .centered-text {
@@ -711,7 +719,7 @@ header {
 
 .divider-gray{
     margin: auto;
-    max-width: 300px;
+    max-width: 200px;
     border: 2px solid var(--lightgray);
     opacity: 1;
 }
@@ -773,3 +781,16 @@ header {
     0%{transform: translateY(-10%);transition: ease 0.5s;}
     50%{transform: translateY(10%);transition: ease 0.5s;}
   }
+
+  .mainc{
+    font-size: 22px;
+  }
+
+  .maincicon{
+    font-size:28px;
+  }
+
+.slim-menu a{
+    font-size:1em;
+    font-weight: 700;
+}
