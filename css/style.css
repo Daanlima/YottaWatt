@@ -18,6 +18,7 @@ body {
     --red: #fa0d1c;
     --black:#232323;
     --orange: #db8f03;
+    --darkOrange: #b07406;
     --lightgray:#7f7f7f;
 }
 
@@ -705,6 +706,34 @@ header {
   }
 
 .slim-menu a{
+    background-color:transparent;
+    color:var(--primaryAction) !important;
     font-size:1em;
     font-weight: 700;
+}
+
+.slim-menu .active{
+    background-color:var(--primary);
+    color:var(--secondary) !important;
+}
+
+.simuladorform{
+    padding:2em;
+    border:1px solid #ccc;
+}
+
+.simuladorCalc{
+    padding:2em;
+    border:1px solid #ccc;
+}
+
+#gasto-mensal{
+    color:#000 !important
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"] {
+  color: #000 !important;
 }

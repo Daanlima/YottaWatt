@@ -1,4 +1,4 @@
-document.querySelector('form').addEventListener('submit', function(e) {
+document.querySelector('form.simuladorCalc').addEventListener('click', function(e) {
     e.preventDefault();
     let gastoMensal = document.getElementById('gasto-mensal').value;
     let quantidadePlacas = Math.ceil(gastoMensal/0.95/62);
