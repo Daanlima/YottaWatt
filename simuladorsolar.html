@@ -27,19 +27,15 @@
     <div class="container-fluid bg-black p-0">
       <div class="row gx-0 d-none d-lg-flex">
         <div class="text-center p-2 slim-menu">
-
-          <!--<span class="fs-6 w-600 mr-2">Conheça nossos serviços de Paineis solares </span>-->
-          <a href="#" class="btn btn-sm btn-primary text-uppercase active">Fotovoltaicos<i class="fa-solid fa-leaf"></i>
+          <a href="index.html" class="btn btn-sm btn-primary text-uppercase active">Fotovoltaicos<i class="fa-solid fa-leaf"></i>
           </a>
 
-          <a href="#" class="btn btn-sm btn-primary text-uppercase">Construção e reforma <i class="fa-solid fa-helmet-safety"></i>
+          <a href="em-construcao.html" class="btn btn-sm btn-primary text-uppercase">Construção e reforma <i class="fa-solid fa-helmet-safety"></i>
           </a>
 
-          <a href="#" class="btn btn-sm btn-primary text-uppercase">Aquecedores de água <i class="fa-solid fa-temperature-arrow-up"></i>
+          <a href="em-construcao.html" class="btn btn-sm btn-primary text-uppercase">Aquecedores de água <i class="fa-solid fa-temperature-arrow-up"></i>
           </a>
         </div>
-
-        
       </div>
     </div>
     <nav class="navbar navbar-expand-lg bg-darkblue navbar-dark sticky-top px-4 px-lg-5 py-lg-0">
@@ -62,11 +58,11 @@
     </nav>
 
     <div class="container my-5">
-      <h1 class="text-center mb-5">Calculadora de Economia de Energia</h1>
+      <h1 class="text-center mb-5 text-uppercase">Simulador Solar</h1>
       <div class="row">
         <div class="col-md-6">
           <!-- Formulário HTML -->
-          <form class="simuladorform" method="post" action="enviar-contato.php">
+          <form class="simuladorform" method="post" action="enviar-contato-simulador.php">
             <h4 class="text-black">Entre em contato</h4>
             <div class="mb-3">
               <label for="nome" class="form-label">Nome:</label>
@@ -85,8 +81,12 @@
               <input type="text" class="form-control" id="localidade" name="localidade" placeholder="Sao Paulo" required>
             </div>
             <div class="mb-3">
-              <label for="valor" class="form-label">Gasto Mensal:</label>
-              <input type="number" step="0.01" placeholder="R$ 0,00" class="form-control" id="localidade" name="localidade" required>
+              <label for="gasto" class="form-label">Gasto Mensal:</label>
+              <input type="number" step="0.01" placeholder="R$ 0,00" class="form-control" id="gasto" name="gasto" required>
+            </div>
+            <div class="mb-3">
+              <label for="mensagem" class="form-label">Mensagem:</label> <br>
+              <textarea rows="5" cols="68" class="form-label" id="mensagem" name="mensagem"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Enviar</button>
           </form>
@@ -95,7 +95,7 @@
         <div class="col-md-6">
           <form class="simuladorCalc">
             <div class="mb-3">
-              <h5 class="text-black">Teste agora mesmo:</h5>
+              <h5 class="text-black">Calculadora de Economia de Energia:</h5>
               <label for="gasto-mensal" class="form-label">Gasto Atual Mensal com Energia (R$)</label>
               <input type="number" class="form-control" id="gasto-mensal" required>
             </div>
@@ -158,14 +158,14 @@
           <div class="chamadatext text-center col-lg-12 col-md-12 col-sm-12">
             <h2 class="fw-900"> ENTRE EM CONTATO CONOSCO </h2>
             <h3 class="fw-500 pb-3"> ECONOMIZE DINHEIRO E CONTRIBUA <br> PARA UM FUTURO SUSTENTÁVEL </h3>
-
+  
             <div class="py-2">
               <h5 class="text-white"> <b>(11) 9.9706-1198</b></h5>
               <h5 class="text-white"> <b>(11) 9.9288-9886</b></h5>
               <h5 class="text-white"> <b>contato@yottawatt.com.br </b> </h5>
             </div>
-
-            <a href="" class="btn btn-primary py-3 px-5 mt-4 mb-2">FALE COM UM ESPECIALISTA</a>
+  
+            <a href="https://api.whatsapp.com/send/?phone=551130427381&text=Ol%C3%A1%21+Estava+no+site+e+gostaria+de+mais+informa%C3%A7%C3%B5es+do+sistema.+&type=phone_number&app_absent=0" class="btn btn-primary py-3 px-5 mt-4 mb-2">FALE COM UM ESPECIALISTA NO WHATSAPP </a>
           </div>
         </div>
       </div>
