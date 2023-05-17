@@ -1,0 +1,10 @@
+DirectoryIndex index.html
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+ErrorDocument 403 /nao-autorizado.html
+ErrorDocument 404 /nao-encontrado.html
+ErrorDocument 500 /erro.html
