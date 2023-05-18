@@ -1,19 +1,21 @@
 <?php
-  // Recupera os valores enviados pelo formulário
-  $nome = $_POST['nome'];
-  $email = $_POST['email'];
-  $telefone = $_POST['telefone'];
-
-  // Define as informações do e-mail
-  $para = "contato@yottawatt.com.br";
-  $assunto = "Contato do site - Simulador";
-  $mensagem = "Nome: $nome\n";
-  $mensagem .= "E-mail: $email\n";
-  $mensagem .= "Telefone: $telefone\n";
-
-  // Envia o e-mail
-  mail($para, $assunto, $mensagem);
-
-  // Redireciona para a página de agradecimento
-  header("Location: obrigado.html");
+// Get data from form 
+$name = $_POST['nome'];
+$email= $_POST['email'];
+$tel= $_POST['telefone'];
+ 
+$to = "yourEmail@gmail.com";
+$subject = "This is the subject line";
+ 
+$txt ="Nome: ". $name . "\r\n  Email: "
+    . $email . "\r\n Telefone =" . $tel . "\r\n Contato enviado de um visitante do site";
+ 
+$headers = "From: noreply@yottawatt.com" . "\r\n" .
+            "CC: somebodyelse@example.com";
+if($email != NULL) {
+    mail($to, $subject, $txt, $headers);
+}
+ 
+// Redirect to
+header("obrigado.html");
 ?>
