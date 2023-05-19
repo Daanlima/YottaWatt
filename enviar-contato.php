@@ -7,8 +7,8 @@
 
   // Define as informações do e-mail
   $headers = "From: noreply@yottawatt.com";
-  $para = "contato@yottawatt.com.br";
-  $assunto = "Contato do site - Simulador";
+  $para = "yottawattsolucoes@gmail.com";
+  $assunto = "Contato do site - Formulario";
   $mensagem = "Nome: $nome\n";
   $mensagem .= "E-mail: $email\n";
   $mensagem .= "Telefone: $telefone\n";
