@@ -6,7 +6,7 @@
   $msg = $_POST['mensagem'];
 
   // Define as informações do e-mail
-  $headers = "From: noreply@yottawatt.com";
+  $headers = "From: yottawattsolucoes@gmail.com";
   $para = "yottawattsolucoes@gmail.com";
   $assunto = "Contato do site - Formulario";
   $mensagem = "Nome: $nome\n";

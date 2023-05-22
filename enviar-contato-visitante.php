@@ -10,7 +10,7 @@ $subject = "Contato do site - Visitante";
 $txt ="Nome: ". $name . "\r\n  Email: "
     . $email . "\r\n Telefone =" . $tel . "\r\n Contato enviado de um visitante do site";
  
-$headers = "From: noreply@yottawatt.com";
+$headers = "From: yottawattsolucoes@gmail.com";
 if($email != NULL) {
     mail($to, $subject, $txt, $headers);
 }
