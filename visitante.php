@@ -72,19 +72,19 @@
     <div class="container-fluid bg-black p-0">
       <div class="row gx-0 d-none d-lg-flex">
         <div class="text-center p-2 slim-menu">
-          <a href="index.html" class="btn btn-sm btn-primary text-uppercase active">Fotovoltaicos<i class="fa-solid fa-leaf"></i>
+          <a href="index" class="btn btn-sm btn-primary text-uppercase active">Fotovoltaicos<i class="fa-solid fa-leaf"></i>
           </a>
 
-          <a href="em-construcao.html" class="btn btn-sm btn-primary text-uppercase">Construção e reforma <i class="fa-solid fa-helmet-safety"></i>
+          <a href="em-construcao" class="btn btn-sm btn-primary text-uppercase">Construção e reforma <i class="fa-solid fa-helmet-safety"></i>
           </a>
 
-          <a href="em-construcao.html" class="btn btn-sm btn-primary text-uppercase">Aquecedores de água <i class="fa-solid fa-temperature-arrow-up"></i>
+          <a href="em-construcao" class="btn btn-sm btn-primary text-uppercase">Aquecedores de água <i class="fa-solid fa-temperature-arrow-up"></i>
           </a>
         </div>
       </div>
     </div>
     <nav class="navbar navbar-expand-lg bg-darkblue navbar-dark sticky-top px-4 px-lg-5 py-lg-0">
-      <a href="index.html" class="navbar-brand d-flex align-items-center">
+      <a href="index" class="navbar-brand d-flex align-items-center">
         <img src="img/logo@2x.png" class="img-responsive logobox" alt="">
       </a>
       <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -92,17 +92,17 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto py-3 py-lg-0">
-          <a href="index.html" class="nav-item nav-link">Home</a>
+          <a href="index" class="nav-item nav-link">Home</a>
           <div class="nav-item dropdown">
             <a href="#sobre" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sobre</a>
             <div class="dropdown-menu bg-light m-0">
               <a href="#sobre" class="dropdown-item">Quem somos</a>
-              <a href="faq.html" class="dropdown-item">FAQ</a>
+              <a href="faq" class="dropdown-item">FAQ</a>
             </div>
           </div>
           <a href="#servicos" class="nav-item nav-link">Serviços</a>
-          <a href="simuladorsolar.html" class="nav-item nav-link">Simulador Solar</a>
-          <a href="contato.php" class="nav-item nav-link">Contato</a>
+          <a href="simuladorsolar" class="nav-item nav-link">Simulador Solar</a>
+          <a href="contato" class="nav-item nav-link">Contato</a>
         </div>
       </div>
     </nav>
@@ -245,7 +245,7 @@
 
         <div class="row">
           <div class="col-12 text-center mt-5">
-            <a href="fotos-ft.html" class="btn btn-lg btn-primary p-3">VER MAIS FOTOS</a>
+            <a href="fotos-ft" class="btn btn-lg btn-primary p-3">VER MAIS FOTOS</a>
           </div>
         </div>
       </div>

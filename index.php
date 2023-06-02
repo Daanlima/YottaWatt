@@ -61,7 +61,7 @@
           </div>
           <a href="#servicos" class="nav-item nav-link">Serviços</a>
           <a href="simuladorsolar.html" class="nav-item nav-link">Simulador Solar</a>
-          <a href="contato.php" class="nav-item nav-link">Contato</a>
+          <a href="contato" class="nav-item nav-link">Contato</a>
         </div>
       </div>
     </nav>
