@@ -47,7 +47,9 @@
         <img src="img/logo@2x.png" class="img-responsive logobox" alt="">
       </a>
       <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon">
+        <i class="fa-solid fa-bars" style="color:#000; font-size:28px;"></i>
+        </span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto py-3 py-lg-0">
