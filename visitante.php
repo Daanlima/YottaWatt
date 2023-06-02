@@ -72,13 +72,13 @@
     <div class="container-fluid bg-black p-0">
       <div class="row gx-0 d-none d-lg-flex">
         <div class="text-center p-2 slim-menu">
-          <a href="index" class="btn btn-sm btn-primary text-uppercase active">Fotovoltaicos<i class="fa-solid fa-leaf"></i>
+          <a href="index.php" class="btn btn-sm btn-primary text-uppercase active">Fotovoltaicos<i class="fa-solid fa-leaf"></i>
           </a>
 
-          <a href="em-construcao" class="btn btn-sm btn-primary text-uppercase">Construção e reforma <i class="fa-solid fa-helmet-safety"></i>
+          <a href="em-construcao.html" class="btn btn-sm btn-primary text-uppercase">Construção e reforma <i class="fa-solid fa-helmet-safety"></i>
           </a>
 
-          <a href="em-construcao" class="btn btn-sm btn-primary text-uppercase">Aquecedores de água <i class="fa-solid fa-temperature-arrow-up"></i>
+          <a href="em-construcao.html" class="btn btn-sm btn-primary text-uppercase">Aquecedores de água <i class="fa-solid fa-temperature-arrow-up"></i>
           </a>
         </div>
       </div>
@@ -88,7 +88,9 @@
         <img src="img/logo@2x.png" class="img-responsive logobox" alt="">
       </a>
       <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon">
+          <i class="fa-solid fa-bars" style="color:#000; font-size:28px;"></i>
+        </span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto py-3 py-lg-0">

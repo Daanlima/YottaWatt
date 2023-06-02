@@ -30,13 +30,13 @@
     <div class="container-fluid bg-black p-0">
       <div class="row gx-0 d-none d-lg-flex">
         <div class="text-center p-2 slim-menu">
-          <a href="index" class="btn btn-sm btn-primary text-uppercase">Fotovoltaicos<i class="fa-solid fa-leaf"></i>
+          <a href="index.php" class="btn btn-sm btn-primary text-uppercase">Fotovoltaicos<i class="fa-solid fa-leaf"></i>
           </a>
 
-          <a href="em-construcao" class="btn btn-sm btn-primary text-uppercase">Construção e reforma <i class="fa-solid fa-helmet-safety"></i>
+          <a href="em-construcao.html" class="btn btn-sm btn-primary text-uppercase">Construção e reforma <i class="fa-solid fa-helmet-safety"></i>
           </a>
 
-          <a href="em-construcao" class="btn btn-sm btn-primary text-uppercase">Aquecedores de água <i class="fa-solid fa-temperature-arrow-up"></i>
+          <a href="em-construcao.html" class="btn btn-sm btn-primary text-uppercase">Aquecedores de água <i class="fa-solid fa-temperature-arrow-up"></i>
           </a>
         </div>
       </div>

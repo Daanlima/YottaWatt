@@ -11,12 +11,11 @@ $quebra_linha = "\n";
 $name = $_POST['nome'];
 $email= $_POST['email'];
 $tel= $_POST['telefone'];
-$subject= $_POST['assunto'];
-$msg= $_POST['mensagem'];
-$subject = "Contato do site - " . $subject;
+$assunto= $_POST['assunto'];
+$subject = "Contato do site - Visitante" . $assunto;
  
 $txt ="Nome: ". $name . "\r\n  Email: "
-    . $email . "\r\n Telefone =" . $tel . "\r\n  Mensagem =" . $msg;
+    . $email . "\r\n Telefone =" . $tel . "\r\n  Mensagem =" . $mensagem;
  
 $headers = "From:" . $from;
 
