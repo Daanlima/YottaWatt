@@ -6,6 +6,7 @@
     <title>YottaWatt</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/png" href="img/favicon.png">
+
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -53,19 +54,31 @@
           <a href="index.html" class="nav-item nav-link">Home</a>
           <a href="index.html#sobre" class="nav-item nav-link">Sobre</a>
           <a href="index.html#servicos" class="nav-item nav-link">Serviços</a>
-          <a href="simuladorsolar.html" class="nav-item nav-link active">Simulador Solar</a>
-          <a href="contato.html" class="nav-item nav-link">Contato</a>
+          <a href="simuladorsolar.html" class="nav-item nav-link">Simulador Solar</a>
+          <a href="contato.html" class="nav-item nav-link active">Contato</a>
         </div>
       </div>
     </nav>
 
     <div class="container my-5">
-      <h1 class="text-center mb-5 text-uppercase">Simulador Solar</h1>
-      <div class="row">
+      <h1 class="text-center mb-5 text-uppercase">Entre em contato</h1>
+      <div class="row vertical-align">
         <div class="col-md-6">
+          <div class="text-center d-flex aligns-items-center ">
+            <img src="img/capturas/instalacao-paineis-equipe2.jpeg" class="img-fluid" alt="">
+          </div>
+          <div class="text-center d-flex aligns-items-center ">
+            <img src="img/capturas/instalacao-paineis-equipe3.jpeg" class="img-fluid" alt="">
+          </div>
+        </div>
+          <div class="col-md-6">
           <!-- Formulário HTML -->
-          <form class="simuladorform" method="post" action="enviar-contato-simulador.php">
-            <h4 class="text-black">Entre em contato</h4>
+          <form class="contatoform" method="post" action="enviar-contato.php">
+            <div class="mb-4">
+              <h4 class="text-black">Formulário</h4>
+              <span class="text-muted">Preencha com seus dados para retornarmos contato.</span>
+            </div>
+
             <div class="mb-3">
               <label for="nome" class="form-label">Nome:</label>
               <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o seu Nome ..."  required>
@@ -79,77 +92,17 @@
               <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="11 9 1234-1234" required>
             </div>
             <div class="mb-3">
-              <label for="localidade" class="form-label">Localidade:</label>
-              <input type="text" class="form-control" id="localidade" name="localidade" placeholder="Sao Paulo" required>
-            </div>
-            <div class="mb-3">
-              <label for="gasto" class="form-label">Gasto Mensal:</label>
-              <input type="number" step="0.01" placeholder="R$ 0,00" class="form-control" id="gasto" name="gasto" required>
+              <label for="assunto" class="form-label">Assunto:</label>
+              <input type="text" class="form-control" id="assunto" name="assunto" placeholder="Assunto" required>
             </div>
             <div class="mb-3">
               <label for="mensagem" class="form-label">Mensagem:</label> <br>
               <textarea rows="5" cols="68" class="form-label" id="mensagem" name="mensagem"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+
+            <button type="submit" class="btn btn-primary w-100" name="submit">ENVIAR FORMULÁRIO</button>
           </form>
 
-        </div>
-        <div class="col-md-6">
-          <form class="simuladorCalc">
-            <div class="mb-3">
-              <h5 class="text-black">Calculadora de Economia de Energia:</h5>
-              <label for="gasto-mensal" class="form-label">Gasto Atual Mensal com Energia (R$)</label>
-              <input type="number" class="form-control" id="gasto-mensal" required>
-            </div>
-            <button type="button" id="calcular" class="btn btn-primary">Calcular</button>
-          </form>
-
-          <ul class="list-group">
-            <li class="list-group-item d-flex justify-content-between">
-              <span>Quantidade de Placas Solares</span>
-              <span id="quantidade-placas"></span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between">
-              <span>Tamanho do Sistema (Kwp)</span>
-              <span id="tamanho-sistema"></span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between">
-              <span>Quantidade de Módulos (un)</span>
-              <span id="quantidade-modulos"></span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between">
-              <span>Produção Estimada Mensal (kWh/mês)</span>
-              <span id="producao-mensal"></span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between">
-              <span>Produção Estimada Anual (kWh/ano)</span>
-              <span id="producao-anual"></span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between">
-              <span>Área de Telhado Necessária (m²)</span>
-              <span id="area-telhado"></span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between">
-              <span>Peso Estimado por m² (kg)</span>
-              <span id="peso-estimado-m2"></span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between">
-              <span>Redução de CO2 na Atmosfera (kg CO2)</span>
-              <span id="reducao-co2"></span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between">
-              <span>Equivalente a Árvores Plantadas (un)</span>
-              <span id="arvores-plantadas"></span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between">
-              <span>Economia Mensal (R$)</span>
-              <span id="economia-mensal"></span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between">
-              <span>Economia Total Acumulada em 30 Anos (R$)</span>
-              <span id="economia-total"></span>
-            </li>
-          </ul>
         </div>
       </div>
     </div>
@@ -209,9 +162,43 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="js/simulador.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
-    
-    
+    <!-- Custom Javascript -->
+    <script src="js/main.js"></script><script type="text/javascript">
+      new PureCounter();
+
+      new Swiper('.clients-slider', {
+          speed: 400,
+          loop: true,
+          autoplay: {
+              delay: 5000,
+              disableOnInteraction: false
+          },
+          slidesPerView: 'auto',
+          pagination: {
+              el: '.swiper-pagination',
+              type: 'bullets',
+              clickable: true
+          },
+          breakpoints: {
+              320: {
+                  slidesPerView: 2,
+                  spaceBetween: 40
+              },
+              480: {
+                  slidesPerView: 3,
+                  spaceBetween: 60
+              },
+              640: {
+                  slidesPerView: 4,
+                  spaceBetween: 80
+              },
+              992: {
+                  slidesPerView: 6,
+                  spaceBetween: 120
+              }
+          }
+      });
+  </script> 
   </body>
 </html>

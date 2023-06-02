@@ -1,22 +1,27 @@
 <?php
-  // Recupera os valores enviados pelo formulário
-  $nome = $_POST['nome'];
-  $email = $_POST['email'];
-  $telefone = $_POST['telefone'];
-  $msg = $_POST['mensagem'];
+ini_set( 'display_errors', 1 );
+error_reporting( E_ALL );
 
-  // Define as informações do e-mail
-  $headers = "From: yottawattsolucoes@gmail.com";
-  $para = "yottawattsolucoes@gmail.com";
-  $assunto = "Contato do site - Formulario";
-  $mensagem = "Nome: $nome\n";
-  $mensagem .= "E-mail: $email\n";
-  $mensagem .= "Telefone: $telefone\n";
-  $mensagem .= "Mensagem: $msg\n";
 
-  // Envia o e-mail
-  mail($para, $assunto, $mensagem, $headers);
+$from = "no-reply@yottawatt.com.br";
+$to = "contato@yottawatt.com.br";
 
-  // Redireciona para a página de agradecimento
-  header("Location: obrigado.html");
+
+$quebra_linha = "\n";
+$name = $_POST['nome'];
+$email= $_POST['email'];
+$tel= $_POST['telefone'];
+$subject= $_POST['assunto'];
+$msg= $_POST['mensagem'];
+$subject = "Contato do site - " . $subject;
+ 
+$txt ="Nome: ". $name . "\r\n  Email: "
+    . $email . "\r\n Telefone =" . $tel . "\r\n  Mensagem =" . $msg;
+ 
+$headers = "From:" . $from;
+
+mail($to, $subject, $txt, $headers);
+ 
+// Redirect to
+header("Location: obrigado.html");
 ?>

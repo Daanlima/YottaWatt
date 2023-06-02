@@ -53,7 +53,7 @@
                       <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="11 9 1234-1234" required>
                     </div>
         
-                    <button type="submit" class="btn btn-primary w-100">ENVIAR</button>
+                    <button type="submit" class="btn btn-primary w-100" name="submit">ENVIAR</button>
                   </form>
                 </div>
                 <div class="modal-footer">
@@ -102,7 +102,7 @@
           </div>
           <a href="#servicos" class="nav-item nav-link">Serviços</a>
           <a href="simuladorsolar.html" class="nav-item nav-link">Simulador Solar</a>
-          <a href="contato.html" class="nav-item nav-link">Contato</a>
+          <a href="contato.php" class="nav-item nav-link">Contato</a>
         </div>
       </div>
     </nav>
