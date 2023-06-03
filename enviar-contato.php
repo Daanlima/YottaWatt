@@ -12,7 +12,7 @@ $name = $_POST['nome'];
 $email= $_POST['email'];
 $tel= $_POST['telefone'];
 $assunto= $_POST['assunto'];
-$subject = "Contato do site - Visitante" . $assunto;
+$subject = "Contato do site - " . $assunto;
  
 $txt ="Nome: ". $name . "\r\n  Email: "
     . $email . "\r\n Telefone =" . $tel . "\r\n  Mensagem =" . $mensagem;

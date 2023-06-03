@@ -99,7 +99,7 @@
             </div>
             <div class="mb-3">
               <label for="mensagem" class="form-label">Mensagem:</label> <br>
-              <textarea rows="5" cols="68" class="form-label" id="mensagem" name="mensagem"></textarea>
+              <input type="text" class="form-control" id="mensagem" name="mensagem" required>
             </div>
 
             <button type="submit" class="btn btn-primary w-100" name="submit">ENVIAR FORMULÁRIO</button>
