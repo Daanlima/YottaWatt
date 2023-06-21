@@ -54,7 +54,13 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto py-3 py-lg-0">
           <a href="index" class="nav-item nav-link">Home</a>
-          <a href="index#sobre" class="nav-item nav-link">Sobre</a>
+          <div class="nav-item dropdown">
+            <a href="index.php#sobre" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sobre</a>
+            <div class="dropdown-menu bg-light m-0">
+              <a href="index.php#sobre" class="dropdown-item">Quem somos</a>
+              <a href="faq.html" class="dropdown-item">FAQ</a>
+            </div>
+          </div>
           <a href="index#servicos" class="nav-item nav-link">Serviços</a>
           <a href="simuladorsolar" class="nav-item nav-link">Simulador Solar</a>
           <a href="contato" class="nav-item nav-link active">Contato</a>

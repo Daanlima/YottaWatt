@@ -2,7 +2,6 @@
 <html class="no-js" lang="pt-br">
   <head>
     <meta charset="utf-8" />
-    
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>YottaWatt</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -32,7 +31,7 @@
     <div class="container-fluid bg-black p-0">
       <div class="row gx-0 d-none d-lg-flex">
         <div class="text-center p-2 slim-menu">
-          <a href="index.php" class="btn btn-sm btn-primary text-uppercase">Fotovoltaicos <i class="fa-solid fa-leaf"></i>
+          <a href="index.php" class="btn btn-sm btn-primary text-uppercase">Fotovoltaicos<i class="fa-solid fa-leaf"></i>
           </a>
 
           <a href="em-construcao.html" class="btn btn-sm btn-primary text-uppercase">Construção e reforma <i class="fa-solid fa-helmet-safety"></i>
@@ -49,7 +48,7 @@
       </a>
       <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
         <span class="navbar-toggler-icon">
-          <i class="fa-solid fa-bars" style="color:#000; font-size:28px;"></i>
+        <i class="fa-solid fa-bars" style="color:#000; font-size:28px;"></i>
         </span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -64,73 +63,63 @@
           </div>
           <a href="index#servicos" class="nav-item nav-link">Serviços</a>
           <a href="simuladorsolar" class="nav-item nav-link">Simulador Solar</a>
-          <a href="contato" class="nav-item nav-link">Contato</a>
+          <a href="contato" class="nav-item nav-link active">Contato</a>
         </div>
       </div>
     </nav>
 
-    <div class="container pt-5 pb-3">
-      <div class="row">
-        <h1 class="text-center">Perguntas Frequentes</h1>
-        <hr class="divider-orange text-center" />
-
-        <div class="faq py-5">
-          <div class="question">
-            <span class="quest"><b>É permitida a venda da produção excedente ao meu consumo?</b></span>
-            <br>
-            <span class="reply">A energia gerada pode ser utilizada em até 5 (cinco) anos após a sua geração. <br> A Legislação vigente não permite a venda de energia excedente para a concessionária ou terceiros até o momento.</span>
+    <div class="container my-5">
+      <h1 class="text-center mb-5 text-uppercase">Entre em contato</h1>
+      <div class="row vertical-align">
+        <div class="col-md-6">
+          <div class="text-center d-flex aligns-items-center ">
+            <img src="img/capturas/instalacao-paineis-equipe2.jpeg" class="img-fluid" alt="">
+          </div>
+          <div class="text-center d-flex aligns-items-center ">
+            <img src="img/capturas/instalacao-paineis-equipe3.jpeg" class="img-fluid" alt="">
           </div>
         </div>
+          <div class="col-md-6">
+          <!-- Formulário HTML -->
+          <form class="contatoform" method="post" action="enviar-contato.php" enctype="multipart/form-data">
+            <div class="mb-4">
+              <h4 class="text-black">Formulário</h4>
+              <span class="text-muted">Preencha com seus dados para retornarmos contato.</span>
+            </div>
 
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome:</label>
+              <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o seu Nome ..."  required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="email@exemplo.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="telefone" class="form-label">Telefone:</label>
+              <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="11 9 1234-1234" required>
+            </div>
+            <div class="mb-3">
+              <label for="assunto" class="form-label">Assunto:</label>
+              <input type="text" class="form-control" id="assunto" name="assunto" placeholder="Assunto" required>
+            </div>
+            <div class="mb-3">
+              <label for="mensagem" class="form-label">Mensagem:</label> 
+              <input type="text" class="form-control" id="mensagem" name="mensagem" required>
+            </div>
+            <div class="mb-3">
+              <label for="conta" class="form-label">Anexe sua conta de energia:</label>
+              <input type="file" class="form-control" name="conta">
+            </div>
+            <div class="mb-3">
+              <label for="doc" class="form-label">Anexe seu documento com foto (CNH ou RG):</label>
+              <input type="file" class="form-control" name="doc">
+            </div>
 
-        <div class="faq py-3">
-          <div class="question">
-            <span class="quest"><b>Preciso de um medidor especial na entrada de minha casa?</b></span>
-            <br>
-            <span class="reply">Sim. Assim que aprovada a instalação, troca do medidor convencional (unidirecional) por um medidor Bidirecional é custeado pela concessionária.</span>
-          </div>
+            <button type="submit" class="btn btn-primary w-100" name="submit">ENVIAR FORMULÁRIO</button>
+          </form>
+
         </div>
-
-
-        <div class="faq py-3">
-          <div class="question">
-            <span class="quest"><b>Posso instalar o sistema em um local e consumir em outros locais?</b></span>
-            <br>
-            <span class="reply">Sim, desde que na mesma área de concessionária de energia e em residências com o mesmo CPF/CNPJ da unidade geradora. Primeiro haverá o abatimento TOTAL da conta da residência onde foi gerada a energia e posteriormente das unidades definidas e ordenadas pelo cliente.</span>
-          </div>
-        </div>
-
-
-        <div class="faq py-3">
-          <div class="question">
-            <span class="quest"><b>Meu telhado não suportar o peso ou não tenho espaço suficiente, como proceder?</b></span>
-            <br>
-            <span class="reply">Caso haja algum desses problemas, existem alternativas técnicas, consulte-nos!</span>
-          </div>
-        </div>
-
-
-        <div class="faq py-3">
-          <div class="question">
-            <span class="quest"><b>Qual a durabilidade de um sistema de energia Solar?</b></span>
-            <br>
-            <span class="reply">Existem sistemas em pleno funcionamento com mais de 35 (trinta e cinco) anos. Os inversores são garantidos por 10 (dez) anos contra defeitos de fabricação e os painéis solares têm a garantia de 25 (vinte e cinco) anos para 80% de sua performance.</span>
-          </div>
-        </div>
-
-        <div class="faq py-3">
-          <div class="question">
-            <span class="quest"><b>Qual a mudança realizada na nova lei conhecida como marco legal da micro e minigeração de energia (14.300/22) ?</b></span>
-            <br>
-            <span class="reply">Abaixo o vídeo explica de forma didática qual foi o impacto real das mudanças da nova lei nos sistemas fotovoltaicos. </span>
-          </div>
-
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe width="500" height="300" src="https://www.youtube.com/embed/QUjO373z4Q4" title="Nova lei do fotovoltaico" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>          </div>
-          
-        </div>
-      
-
       </div>
     </div>
 
@@ -146,8 +135,7 @@
               <h5 class="text-white"> <b>(11) 9.9288-9886</b></h5>
               <h5 class="text-white"> <b>contato@yottawatt.com.br </b> </h5>
             </div>
-  
-            <a href="https://api.whatsapp.com/send/?phone=551130427381&text=Ol%C3%A1%21+Estava+no+site+e+gostaria+de+mais+informa%C3%A7%C3%B5es+do+sistema.+&type=phone_number&app_absent=0" class="btn btn-primary py-3 px-5 mt-4 mb-2">FALE COM UM ESPECIALISTA NO WHATSAPP <i class="fa-brands fa-whatsapp"></i> </a>
+            <a href="https://api.whatsapp.com/send/?phone=551130427381&text=Ol%C3%A1%21+Estava+no+site+e+gostaria+de+mais+informa%C3%A7%C3%B5es+do+sistema.+&type=phone_number&app_absent=0" class="btn btn-primary py-3 px-5 mt-4 mb-2">FALE COM UM ESPECIALISTA NO WHATSAPP <i class="fa-brands fa-whatsapp"></i></a>
           </div>
         </div>
       </div>
