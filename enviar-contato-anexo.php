@@ -50,10 +50,12 @@ $headers .= "This is a MIME encoded message." . $eol;
     $body .= $mensagem . $eol;
     // attachment
     $body .= "--" . $separator . $eol;
-    $body .= "Content-Type: application/octet-stream; name=\"" . $filenameee . "\"" . $eol;
+    $body .= "Content-Type: application/octet-stream; name=\"" . $filenameee_doc . "\"" . $eol;
+    $body .= "Content-Type: application/octet-stream; name=\"" . $filenameee_conta . "\"" . $eol;
     $body .= "Content-Transfer-Encoding: base64" . $eol;
     $body .= "Content-Disposition: attachment" . $eol;
     $body .= $conta . $eol;
+    $body .= $doc . $eol;
     $body .= "--" . $separator . "--";
 
 mail($to, $subject, $body, $headers);
