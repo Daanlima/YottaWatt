@@ -109,11 +109,11 @@
             </div>
             <div class="mb-3">
               <label for="conta" class="form-label">Anexe sua conta de energia:</label>
-              <input type="file" class="form-control" name="conta">
+              <input type="file" class="form-control" name="conta" id="conta">
             </div>
             <div class="mb-3">
               <label for="doc" class="form-label">Anexe seu documento com foto (CNH ou RG):</label>
-              <input type="file" class="form-control" name="doc">
+              <input type="file" class="form-control" name="doc" id="doc">
             </div>
 
             <button type="submit" class="btn btn-primary w-100" name="submit">ENVIAR FORMULÁRIO</button>

@@ -18,9 +18,9 @@ $msg = $_POST['mensagem'];
 $subject = "Contato do site - Formulario Detalhado";
 
 $filenameee_conta =  $_FILES['conta']['name'];
-$filenameee_anexo =  $_FILES['anexo']['name'];
+$filenameee_doc =  $_FILES['doc']['name'];
 $fileName_conta = $_FILES['conta']['tmp_name'];
-$fileName_anexo = $_FILES['anexo']['tmp_name'];
+$fileName_doc = $_FILES['doc']['tmp_name'];
  
 $mensagem = "Nome: $name\n";
 $mensagem .= "E-mail: $email\n";
@@ -30,9 +30,9 @@ $mensagem .= "Gasto Mensal: $gasto\n";
 $mensagem .= "Mensagem: $msg\n";
 
 
-$content_anexo = file_get_contents($filenameee_anexo);
-$content_doc = file_get_contents($filenameee_conta);
-$content_anexo = chunk_split(base64_encode($content_anexo));
+$content_conta = file_get_contents($content_conta);
+$content_doc = file_get_contents($content_doc);
+$content_conta = chunk_split(base64_encode($content_conta));
 $content_doc = chunk_split(base64_encode($content_doc));
 
 $separator = md5(time());

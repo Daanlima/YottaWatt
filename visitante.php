@@ -23,6 +23,15 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <!-- Style -->
     <link href="css/style.css" rel="stylesheet" />
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FNV2QVLC1B"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-FNV2QVLC1B');
+    </script>
   </head>
   <body>
     <a href="https://api.whatsapp.com/send/?phone=551130427381&text=Ol%C3%A1%21+Estava+no+site+e+gostaria+de+mais+informa%C3%A7%C3%B5es+do+sistema.+&type=phone_number&app_absent=0" class="float btn-float" target="_blank">
@@ -99,7 +108,7 @@
             <a href="#sobre" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sobre</a>
             <div class="dropdown-menu bg-light m-0">
               <a href="#sobre" class="dropdown-item">Quem somos</a>
-              <a href="faq" class="dropdown-item">FAQ</a>
+              <a href="faq.html" class="dropdown-item">FAQ</a>
             </div>
           </div>
           <a href="#servicos" class="nav-item nav-link">Serviços</a>
